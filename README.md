@@ -23,9 +23,27 @@ I'm adding some basic "python practices", questions and solution codes.  Practic
 
  
 **Second Practice:**
-1. aa
-2. bb
-3. cc
-4.
-5.
+1. In this practice, we will write a code to generate passwords with random letters and numbers.
+2. First of all, let's start by importing the "random" and "string" modules.
+3. >> import random
+4. >> import string
+5. Then we use the "ASCII" method so that the algorithm can assign random characters from lowercase, uppercase and numbers to us.
+6. >> lower = string.ascii_lowercase #for lowercase
+7. >> upper = string.ascii_uppercase #for uppercase
+8. >> num = string.digits #for numbers
+9. Now we can combine the characters from lowercase, uppercase, and numbers into a password.
+10. >> all = lower + upper + num
+11. We can also ask the user how many characters the password they want to create should be.
+12. >> lenght = int(input("Enter the password lenght you want:"))
+13. To complete the process, we generate a random, user-selected template of the length.
+14. >> template = random.sample(all,lenght)
+15. >> password= "".join(template)
+16. With the Join() method we take all the elements in an iterable and concatenate them into a single string.
+17. Last step, let's print the password.
+18. >> print(password)
+
+
+
+**Third Practice:**
+
   
