@@ -57,3 +57,17 @@ I'm adding some basic "python practices", questions and solution codes.  Practic
 9. The reason why I use {0:.2f} here: I don't prefer to see 2 numbers after the dot on the screen when MBI is fractional.
 10. \n is an expression I added because I prefer that the next output starts from a bottom line.
 11. The user learned the body mass index, but adding whether this value is in the normal range will make the code we wrote more meaningful.
+
+**Fourth Practise:""
+1. This code will tell you how to solve a problem asked in the "hackerrank": https://www.hackerrank.com/challenges/mini-max-sum/problem?isFullScreen=true
+2. Given five positive integers, find the minimum and maximum values that can be calculated by summing exactly four of the five integers.
+3. Then print the respective minimum and maximum values as a single line of two space-separated long integers.
+4. For example, arr = [1,2,3,4,5] Minimum sum of this list: 1+2+3+4 =10 ; the maximum sum is 2+3+4+5 =14.
+5. You don't have to write all the codes on this site. That's why you should pay attention to what points they want from you.
+6. What we need to think about is that if we order our list from smallest to largest, adding 4 values ​​from the beginning and 4 from the end will solve our problem.
+7. >> arr.sort() #arr is the argument of the function they want us to write.
+8. It doesn't have to be the only solution.
+9. Now, if we add all the elements of the list and subtract from the last element and the first element, we can find the minimum and maximum values respectively.
+10. >> s = sum(arr)
+11. >> maximum = s - arr[0]
+12. >> minimum = s - arr[len(arr) - 1]
