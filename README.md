@@ -1,5 +1,6 @@
 # Python-Practices
 I'm adding some basic "python practices", questions and solution codes.  Practicing while having fun is the best part of learning.
+* You can find the Turkish explanation of these practices on my Medium account: https://medium.com/@super.feyza
 
 
 **First Practice:**
@@ -45,5 +46,14 @@ I'm adding some basic "python practices", questions and solution codes.  Practic
 
 
 **Third Practice:**
-
-  
+1. In this practice, we will code a program that calculates the Body Mass Index.
+2. First of all, we need to get the weight in kilograms and the height in meters from the user.
+3. >> height = float(input("Enter your height in meters: "))
+4. >> weight = float(input("Enter your weight in kilograms: "))
+5. We abbreviate the body mass index as “MBI” and put the mathematical calculation into code.
+6. >> MBI = weight/(height**2)
+7. We give the output of the body mass index to the user,
+8. >> print("Your Body Mass Index is: {0:.2f}\n".format(MBI), end='')
+9. The reason why I use {0:.2f} here: I don't prefer to see 2 numbers after the dot on the screen when MBI is fractional.
+10. \n is an expression I added because I prefer that the next output starts from a bottom line.
+11. The user learned the body mass index, but adding whether this value is in the normal range will make the code we wrote more meaningful.
